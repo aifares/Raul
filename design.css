@@ -158,7 +158,6 @@ p {
     z-index: 99999;
 }
 
-
 /* Navbar  */
 .navbar .navbar-brand {
     font-family: 'Lobster', cursive;
@@ -262,10 +261,19 @@ p {
 .navbar.fixed-top.navbar-dark .navbar-nav .nav-link::after {
     background-color: #c0ca33;
 }
+
+
 .content {
     background: grey;
     padding: 120px 0;
 }
+#img1{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .navbar-brand {
         margin-left: 20px;
