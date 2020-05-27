@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="design.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
 <body>
 
@@ -23,15 +23,6 @@
             <div id="main-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li><a href="#" class="nav-item nav-link active">Home</a></li>
-                    <li><a href="#" class="nav-item nav-link">Store</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-item nav-link" data-toggle="dropdown">Services</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Flowers</a>
-                            <a href="#" class="dropdown-item">Vases</a>
-                            <a href="#" class="dropdown-item">Cup's</a>
-                        </div>
-                    </li>
                     <li class="dropdown">
                         <a href="#" class="nav-item nav-link" data-toggle="dropdown">Store</a>
                         <div class="dropdown-menu">
@@ -41,26 +32,26 @@
                             <a href="#" class="dropdown-item">Blah</a>
                             <a href="#" class="dropdown-item">Blah</a>
                         </div>
-                    </li>
                     <li><a href="#" class="nav-item nav-link">Contact</a></li>
+                    <li><a href="login.html" class="nav-item nav-link">Login</a></li>
+                    <li><a href="#" class="nav-item nav-link">Cart</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <div class="banner">
-        <div class="container">
-            <h1>R A Ù L_____A V I L I A</h1>
+        <div class="container" id ="test">
+            <h1>  R A U L </h1>
         </div>
     </div>
 </header>
 
 <main>
     <section id="content" class="content">
-        <div class="container">
+        <div data-aos = "fade-in" class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec elit ex. Etiam elementum lectus et tempor molestie. Pellentesque vestibulum dui sit amet dui volutpat sollicitudin. Etiam non erat finibus, iaculis nunc vel, convallis eros. Etiam efficitur tempor dui, vitae fringilla ipsum tristique quis. Aliquam erat volutpat. Cras ullamcorper ex et viverra vulputate. Nam lectus ligula, pretium nec risus nec, ultricies fringilla mauris. Proin quis venenatis neque, iaculis porta nulla. </p>
+                <div data-aos="fade-in" class="col-md-4">
+                    <img src="download.jpg" alt = " Raul">
                 </div>
                 <div class="col-md-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec elit ex. Etiam elementum lectus et tempor molestie. Pellentesque vestibulum dui sit amet dui volutpat sollicitudin. Etiam non erat finibus, iaculis nunc vel, convallis eros. Etiam efficitur tempor dui, vitae fringilla ipsum tristique quis. Aliquam erat volutpat. Cras ullamcorper ex et viverra vulputate. Nam lectus ligula, pretium nec risus nec, ultricies fringilla mauris. Proin quis venenatis neque, iaculis porta nulla. </p>
@@ -75,7 +66,7 @@
 
 <main>
     <section id="content1" class="content">
-        <div class="container">
+        <div data-aos = "fade-in" class="container">
             <div class="row">
                 <div class="col-md-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec elit ex. Etiam elementum lectus et tempor molestie. Pellentesque vestibulum dui sit amet dui volutpat sollicitudin. Etiam non erat finibus, iaculis nunc vel, convallis eros. Etiam efficitur tempor dui, vitae fringilla ipsum tristique quis. Aliquam erat volutpat. Cras ullamcorper ex et viverra vulputate. Nam lectus ligula, pretium nec risus nec, ultricies fringilla mauris. Proin quis venenatis neque, iaculis porta nulla. </p>
@@ -100,5 +91,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
