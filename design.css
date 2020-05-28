@@ -267,8 +267,8 @@ p {
     background: grey;
     padding: 120px 0;
 }
-#img1{
-    max-width: 100%;
+#2ndRow{
+    padding-right: 5px;
     height: auto;
 }
 
