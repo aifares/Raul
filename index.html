@@ -1,6 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Zoom Effect-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            transition: transform .2s;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+
+        .container_Hover {
+            position: relative;
+            width: 50%;
+        }
+
+        .image_Hover {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay_image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+
+        }
+
+        .container_Hover:hover .overlay_image {
+            opacity: 1;
+        }
+
+        .Hovertext {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+    </style>
+
+
+
+
+
+
+
+    <!-- Header Nav Bar-->
     <title>Raul Retail</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,20 +117,7 @@
 
 <!-- 1st Row of Pictures -->
 <main>
-    <section id="content" class="content">
-        <div data-aos = "fade-in" class="container">
-            <div class="row">
-                <div data-aos="fade-in" class="col-md-6" id = "img1">
-                    <img src="download.jpg" class = "rounded float-left" alt = " Raul" height="183">
-                </div>
-                <div class="col-md-6">
-                    <p>PICTURE GOES HERE</p>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
-
 
 <!-- 2nd Row of Pictures -->
 
@@ -70,14 +125,32 @@
     <section id="2nd Row" class="content">
         <div data-aos = "fade-in" class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="table.jpg" width="400" height="640" class = "rounded float-left" alt = " Raul" height="183">
+                <!-- Picture with Zoom effect and Caption -->
+                <div class="col-md-4" id = "2ndRow">
+                    <div class ="zoom">
+                        <figure>
+                    <img src="table.jpg" width="380" height="640"  class = "img-fluid" alt = " Raul" height="183">
+                        <figcaption> <h1>"PLATES"</h1> </figcaption>
+                        </figure>
+                    </div>
                 </div>
+                <!-- Picture with Zoom effect and Caption -->
                 <div class="col-md-4">
-                    <img src="lighting_-_5_x_7_400x.jpg" width="400" height="640" class = "rounded float-left" alt = " Raul" height="183">
+                    <div class ="zoom">
+                        <figure>
+                        <img src="lighting_-_5_x_7_400x.jpg" width="380" height="640" class = "img-fluid" alt = " Raul" height="183">
+                            <figcaption> <h1> "NOT PLATES </h1></figcaption>
+                        </figure>
+                    </div>
                 </div>
+                <!-- Picture with Zoom effect and Caption -->
                 <div class="col-md-4">
-                    <img src="furn_400x.jpg" width="400" height="640" class = "rounded float-left" alt = " Raul" height="183">
+                    <div class ="zoom">
+                         <figure>
+                    <img src="furn_400x.jpg" width="380" height="640" class = "img-fluid" alt = " Raul" height="183">
+                            <figcaption> <h1>"NOT PLATES"</h1> </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,21 +160,6 @@
 
 <!-- 3rd Row of Pictures -->
 <main>
-    <section id="3rd Row" class="content">
-        <div data-aos = "fade-in" class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>PICTURE GOES HERE</p>
-                </div>
-                <div class="col-md-6">
-                    <p>PICTURE GOES HERE</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
 </main>
 
 
