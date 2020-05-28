@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Zoom Effect-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            transition: transform .2s;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+
+        .container_Hover {
+            position: relative;
+            width: 50%;
+        }
+
+        .image_Hover {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay_image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+
+        }
+
+        .container_Hover:hover .overlay_image {
+            opacity: 1;
+        }
+
+        .Hovertext {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<main>
+    <section id="3rd Row" class="content">
+        <div data-aos = "fade-in" class="container">
+            <div class="row">
+                <!-- Picture with Zoom effect and Caption -->
+                <div class="col-md-4" id = "3rdRow">
+                    <div class ="zoom">
+                        <figure>
+                            <img src="table.jpg" width="380" height="640"  class = "img-fluid" alt = " Raul" height="183">
+                            <figcaption> <h1>"PLATES"</h1> </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Picture with Zoom effect and Caption -->
+                <div class="col-md-4">
+                    <div class ="zoom">
+                        <figure>
+                            <img src="lighting_-_5_x_7_400x.jpg" width="380" height="640" class = "img-fluid" alt = " Raul" height="183">
+                            <figcaption> <h1> "NOT PLATES </h1></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Picture with Zoom effect and Caption -->
+                <div class="col-md-4">
+                    <div class ="zoom">
+                        <figure>
+                            <img src="furn_400x.jpg" width="380" height="640" class = "img-fluid" alt = " Raul" height="183">
+                            <figcaption> <h1>"NOT PLATES"</h1> </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
