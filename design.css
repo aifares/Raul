@@ -500,6 +500,98 @@ p {
 #cf img.top:hover {
     opacity:0;
 }
+/*  Plates picture  */
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/*  Plates picture hover - Don't touch */
+.zoom:hover .middle {
+    opacity: 1;
+}
+
+/*  Plates picture  */
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.zoom:hover .middle2 {
+    opacity: 1;
+}
+.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.zoom:hover .middle3 {
+    opacity: 1;
+}
+.middle4 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.zoom:hover .middle4 {
+    opacity: 1;
+}
+.middle5 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.zoom:hover .middle5 {
+    opacity: 1;
+}
 
 
 
