@@ -247,11 +247,11 @@ nav ul li a:hover{
 
 .shopImage{
     scroll-behavior: smooth;
-    background-color: whitesmoke/*#501B1D*/;
-    height: 30em;
+    background-color: whitesmoke /*#501B1D*/;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .shopImage::-webkit-scrollbar{
@@ -267,10 +267,7 @@ nav ul li a:hover{
 .textInfo{
     font-family: 'Poppins', sans-serif;
     background-color: rgba(0,0,0,0.85);
-    width:50%;
-    color:white;
-    padding: 16px 32px;
-        
+    color:white;  
 }
 
 .staticImage {
@@ -289,8 +286,6 @@ nav ul li a:hover{
     -ms-transform: translate(50%,50%);
     text-align: center;
     position: absolute;
-    top:40%;
-    left:50%;
 }
 
 .organizer:hover .staticImage {
@@ -300,6 +295,13 @@ nav ul li a:hover{
 
 .organizer:hover .textMiddle{
     opacity: 1;
+}
+
+.shopHeading figcaption {
+    font-family: 'Roboto', serif; /*Change the font*/
+    background-color: black;
+    color: white;
+    opacity: 0.8;
 }
 
 /* Scroll Bar*/
@@ -327,7 +329,15 @@ nav ul li a:hover{
 }
 
 /* Fade-In Transition*/
-#mainBanner .bannerHeading  {
+#mainBanner .bannerHeading {
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+.shopHeading{
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
@@ -832,15 +842,44 @@ nav ul li a:hover{
         margin:auto;
     }
 
+    .shopImage{
+        height: 36em;
+        padding:2em;
+    }
+
     .organizer{
         height: 80%;
         width:20%;
-        margin: 2%;        
+        margin: 4%;       
+        transition: 0.5s ease-in-out; 
     }
 
-    .shopImage p{
-        font-size: 10em;
-        padding:0.2em;
+    .organizer:hover{
+        width: 21%;
+    }
+
+    .shopHeading {        
+        margin: 8%;
+    }
+
+    .shopHeading figcaption{
+        font-size: 7em;
+        padding: 20px;
+        width:100%;
+        text-align: center;
+        margin: 4%;
+    }
+
+    .textInfo{
+        width:60%;
+        padding: 16px 32px 16px 32px;
+        font-size: 1.5em;
+        font-family: 'Roboto';
+    }
+
+    .textMiddle{
+        top:50%;
+        left:50%;
     }
           
 }
