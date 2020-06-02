@@ -15,9 +15,12 @@ footer{
 }
 
 header{
+    position: fixed;
+    width: 100%;
     background-color:#2E1114;
     color: white;
     font-weight: 700;
+    z-index: 1;
 }
 
 figure p{
@@ -242,15 +245,72 @@ nav ul li a:hover{
     width:60px;
 }
 
+.shopImage{
+    scroll-behavior: smooth;
+    background-color: whitesmoke/*#501B1D*/;
+    height: 30em;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.shopImage::-webkit-scrollbar{
+    display: none;
+} 
+
+.organizer {
+    cursor: pointer;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.textInfo{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0,0,0,0.85);
+    width:50%;
+    color:white;
+    padding: 16px 32px;
+        
+}
+
+.staticImage {
+    opacity: 1;
+    display: block;
+    width:100%;
+    height: auto;
+    backface-visibility: hidden;
+    transition: 0.3s  ease-in-out; 
+}
+
+.textMiddle{
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(50%,50%);
+    text-align: center;
+    position: absolute;
+    top:40%;
+    left:50%;
+}
+
+.organizer:hover .staticImage {
+    filter: grayscale(100%) blur(1px);
+    
+}
+
+.organizer:hover .textMiddle{
+    opacity: 1;
+}
+
 /* Scroll Bar*/
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 6px;
 	overflow: auto;
 }
 
 ::-webkit-scrollbar-track {
 	background: #f1f1f1;
-	border-radius:40px;
+	border-radius:20px;
 	overflow: auto;
 }
 
@@ -361,6 +421,10 @@ nav ul li a:hover{
         width:40%;
         text-align: center;
     }
+
+    .shopImage{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:641px) and (max-width:768px){
@@ -416,6 +480,10 @@ nav ul li a:hover{
         width:35%;
         text-align: center;
     }
+
+    .shopImage{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:769px) and (max-width:1024px){
@@ -470,6 +538,10 @@ nav ul li a:hover{
         padding: 20px;
         width:25%;
         text-align: center;
+    }
+
+    .shopImage{
+        display: none;
     }
 }
 
@@ -613,6 +685,10 @@ nav ul li a:hover{
     .arrow{
         margin:auto;
     }
+
+    .shopImage{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:1200px) and (max-width: 1600px){
@@ -755,10 +831,18 @@ nav ul li a:hover{
     .arrow{
         margin:auto;
     }
-    
-    
 
-    
+    .organizer{
+        height: 80%;
+        width:20%;
+        margin: 2%;        
+    }
+
+    .shopImage p{
+        font-size: 10em;
+        padding:0.2em;
+    }
+          
 }
 
 
